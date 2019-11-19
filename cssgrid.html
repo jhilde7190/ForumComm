@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+/*      @@media (max-width: 768px) {
+        .wrapper {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @@media (min-width: 769px) {
+        .wrapper {
+          grid-template-columns: 2fr 3fr 1fr;
+        }
+      }
+*/
+      .wrapper {
+          display: grid;
+          height: auto;
+          grid-gap: 1em;
+          grid-auto-flow: columns;
+          grid-auto-rows: auto;
+          margin-bottom: 100px;
+      }
+
+      .banner {
+        align-content: flex-start;
+        grid-column: 1/3;
+        grid-row: 1/2;
+      }
+      .banner > h1 {
+        align-content: flex-start;
+        text-align: right;
+      }
+
+      .publish_date {
+        align-content: flex-start;
+        color: gray;
+        grid-column: 2/3;
+        grid-row: auto;
+        text-align: right;
+      }
+
+      .story_title {
+        align-content: flex-end;
+        font-family:serif;
+        grid-column: 3/6;
+        grid-row: auto;
+      }
+
+      .main {
+        align-content: flex-start;
+        grid-column: 3/6;
+        grid-row: auto;
+        font-family:sans-serif;
+      }
+
+      .nav_icons {
+        align-content: flex-start;
+        grid-column:6/7;
+        grid-row:1/2;
+      }
+
+      .nav_links {
+        align-content: flex-start;
+        grid-column: 2/3;
+        grid-row:auto;
+        font-family: serif;
+        color: dodgerblue;
+        text-align: right;
+      }
+
+      img {
+        grid-column:3/6;
+        grid-row:auto;
+        background-color:lightgrey;
+        width:100%;
+        height:200px;
+      }
+
+      .footer {
+        color: white;
+        background-color: black;
+        text-align: center;
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="banner">
+        <h1>
+          Incurreret velit quid ad legam eu nisi e ut elit quibusdam.
+        </h1>
+      </div>
+      <div class="publish_date">
+        JANUARY 12, 1911
+      </div>
+      <div class="nav_icons">
+        <a href="#">Icon 1</a>
+        <a href="#">Icon 2</a>
+        <a href="#">Icon 3</a>
+        <a href="#">Icon 4</a>
+      </div>
+      <div class="main" style="grid-row:1/2">
+        Excepteur irure cillum ne quorum ita ita consequat exercitation. Cillum doctrina
+        ad consectetur. Probant se noster, litteris quid a litteris imitarentur ad quo
+        ubi nisi elit multos ubi et velit ipsum dolor vidisse.
+      </div>
+      <div class="story_title">
+        <h2>
+          Aut et cillum amet quid ne quo consequat reprehenderit.
+        </h2>
+      </div>
+      <div class="main">
+        Qui sunt esse esse doctrina, quibusdam dolor quis ab minim. Ubi aute mandaremus
+        distinguantur. Eiusmod ut commodo. Et minim proident ad singulis aut aute,
+        offendit do expetendis ubi ea nam quid legam ipsum, quid nam si quem possumus
+        qui veniam hic singulis, ubi nescius cohaerescant, te elit transferrem.
+      </div>
+      <div class="main">
+        Sed laboris relinqueret. Ne arbitror ab nostrud an magna quibusdam senserit.
+        Aliqua incididunt do appellat, laboris id probant ab e export qui tempor, nisi
+        offendit possumus.
+      </div>
+      <div class="nav_links">
+        Ne offendit a appellat ne si nulla nostrud instituendarum.
+      </div>
+      <div class="main">
+        Si magna eram et laborum a occaecat quem proident singulis ex illum in iis quid
+        deserunt, cernantur relinqueret te probant ubi incididunt relinqueret id
+        excepteur ea an tempor o sunt, id singulis efflorescere de se sint esse nisi
+        fabulas. Culpa vidisse quo cohaerescant, ad quem comprehenderit. Laborum sunt a
+        appellat coniunctione, de nulla arbitror distinguantur.Ea hic irure legam
+        veniam, ipsum possumus e mentitum ea in ad quid excepteur qui cupidatat noster
+        quorum id eram. Id labore an dolore, iudicem aut malis. Si labore offendit
+        eiusmod, litteris esse iis consequat illustriora. Officia si legam, labore
+        consequat e quae malis, ullamco et fore appellat in multos de e aute consequat.
+      </div>
+      <img alt="image">
+      <div class="story_title">
+        <h2>
+          Ita ita concursionibus, admodum voluptatibus o expetendis.
+        </h2>
+      </div>
+      <div class="main">
+        Ut admodum efflorescere do nisi illustriora nescius amet probant an ut nisi
+        familiaritatem, hic tempor quo quem. Quae litteris exquisitaque. Veniam litteris
+        aut tractavissent ut mandaremus in commodo. Ullamco irure vidisse.
+      </div>
+      <div class="main">
+        E se amet quamquam, ingeniis culpa constias sed singulis praetermissum qui
+        appellat, a eram despicationes. Occaecat se admodum. Dolor excepteur e
+        imitarentur e minim senserit comprehenderit, fugiat ad si aliqua senserit,
+        laborum consectetur id doctrina.
+      </div>
+      <div class="nav_links">
+        Cupidatat an probant.
+      </div>
+      <div class="main">
+        Cernantur o fugiat hic deserunt enim senserit proident qui in enim relinqueret,
+        malis o id nulla laboris e nam ut praesentibus te quorum ullamco quamquam,
+        fugiat voluptate aliquip a non veniam eiusmod. Ad ipsum dolor te voluptate, fore
+        an aliquip et ipsum, cupidatat adipisicing hic senserit ubi ullamco esse
+        appellat probant. Eram te hic nulla commodo, hic si aliqua nulla dolore a ad
+        illum vidisse appellat, se sunt cernantur pariatur.
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        INFORUM and Forum Communications Company
+      </div>
+      <div>
+        101 5th Streat North, Fargo, ND 58102
+      </div>
+    </div>
+  </body>
+</html>
