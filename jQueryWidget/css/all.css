@@ -1,1 +1,32 @@
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+}
 
+.widget {
+  display: grid;
+  grid-gap: 1em;
+  justify-content: center;
+  align-content: center;
+}
+
+.news_story {
+  display: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 500px;
+  height: auto;
+}
+
+.title {
+  font-family: serif;
+}
+
+.domain {
+  font-family: sans-serif;
+  color: dodgerblue;
+}
+
+.ui-button {
+  text-align: left;
+}
